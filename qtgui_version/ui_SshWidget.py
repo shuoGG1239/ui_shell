@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'ui_SshWidget.ui'
 #
-# Created: Sun Oct 22 15:56:20 2017
+# Created: Mon Oct 23 23:03:31 2017
 #      by: PyQt5 UI code generator 5.4
 #
 # WARNING! All changes made in this file will be lost!
@@ -44,14 +44,17 @@ class Ui_SshWidget(object):
         self.label_3.setGeometry(QtCore.QRect(20, 21, 21, 16))
         self.label_3.setObjectName("label_3")
         self.pushButtonEdit = QtWidgets.QPushButton(self.frameCmd)
-        self.pushButtonEdit.setGeometry(QtCore.QRect(350, 55, 101, 23))
+        self.pushButtonEdit.setGeometry(QtCore.QRect(250, 55, 101, 23))
         self.pushButtonEdit.setObjectName("pushButtonEdit")
         self.comboBoxCmd = QtWidgets.QComboBox(self.frameCmd)
         self.comboBoxCmd.setGeometry(QtCore.QRect(50, 16, 181, 22))
         self.comboBoxCmd.setObjectName("comboBoxCmd")
         self.pushButtonGo = QtWidgets.QPushButton(self.frameCmd)
-        self.pushButtonGo.setGeometry(QtCore.QRect(240, 55, 101, 23))
+        self.pushButtonGo.setGeometry(QtCore.QRect(140, 55, 101, 23))
         self.pushButtonGo.setObjectName("pushButtonGo")
+        self.pushButtonRefresh = QtWidgets.QPushButton(self.frameCmd)
+        self.pushButtonRefresh.setGeometry(QtCore.QRect(360, 55, 101, 23))
+        self.pushButtonRefresh.setObjectName("pushButtonRefresh")
         self.label_5 = QtWidgets.QLabel(SshWidget)
         self.label_5.setGeometry(QtCore.QRect(30, 160, 54, 12))
         self.label_5.setObjectName("label_5")
@@ -77,6 +80,7 @@ class Ui_SshWidget(object):
         self.label_3.setText(_translate("SshWidget", "Cmd"))
         self.pushButtonEdit.setText(_translate("SshWidget", "Edit"))
         self.pushButtonGo.setText(_translate("SshWidget", "Go!"))
+        self.pushButtonRefresh.setText(_translate("SshWidget", "Refresh"))
         self.label_5.setText(_translate("SshWidget", "Output:"))
         self.label_6.setText(_translate("SshWidget", "User"))
         self.pushButtonClear.setText(_translate("SshWidget", "Clear"))

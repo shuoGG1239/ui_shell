@@ -5,6 +5,5 @@
     "REDIS_STOP":"cd /home/redis-3.2.1;./src/redis-server stop",
     "P5BLOG_START":"cd /home/myproject/p5_blog_project/p5Blog;python3 manage.py runserver 0.0.0.0:8000",
     "netstat all":"netstat -ano",
-    "netstat 8000 port":"netstat -tulpn|grep 8000",
-    "kill process":"kill -9 %s"
+    "netstat 8000 port":"netstat -tulpn|grep 8000"
 }

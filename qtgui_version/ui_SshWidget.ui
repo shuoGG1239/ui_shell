@@ -126,7 +126,7 @@
    <widget class="QPushButton" name="pushButtonEdit">
     <property name="geometry">
      <rect>
-      <x>350</x>
+      <x>250</x>
       <y>55</y>
       <width>101</width>
       <height>23</height>
@@ -149,7 +149,7 @@
    <widget class="QPushButton" name="pushButtonGo">
     <property name="geometry">
      <rect>
-      <x>240</x>
+      <x>140</x>
       <y>55</y>
       <width>101</width>
       <height>23</height>
@@ -157,6 +157,19 @@
     </property>
     <property name="text">
      <string>Go!</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonRefresh">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>55</y>
+      <width>101</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Refresh</string>
     </property>
    </widget>
   </widget>
