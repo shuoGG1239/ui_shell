@@ -1,4 +1,5 @@
 import json
+import re
 from ui_SshWidget import Ui_SshWidget
 from CmdFileDialog import CmdFileDialog
 from PyQt5.QtWidgets import QWidget
@@ -20,13 +21,21 @@ class SshWidget(QWidget):
         self.ip = self.sshwidgetui.lineEditServerIP.text()
         self.user = self.sshwidgetui.lineEditUser.text()
         self.password = self.sshwidgetui.lineEditPassword.text()
+        self.sshwidgetui.lineEditArgs.setPlaceholderText('eg: 999,abc,8080')
 
 
     @pyqtSlot()
     def __slot_execute(self):
         current_cmd_real = self.cmds_map.get(self.sshwidgetui.comboBoxCmd.currentText())
-        if self.sshwidgetui.lineEditArgs.text() != '':
-            current_cmd_real = current_cmd_real%(self.sshwidgetui.lineEditArgs.text())
+        resultlist = re.findall(r"{}", current_cmd_real)
+        if len(resultlist) > 0:
+            argstext = self.sshwidgetui.lineEditArgs.text()
+            arglist = argstext.split(',')
+            if len(resultlist) != len(arglist):
+                print('参数数量不匹配')
+                return
+            else:
+                current_cmd_real = current_cmd_real.format(*arglist)
         self.sshwidgetui.textBrowserOutput.append('EXE: '+current_cmd_real)
         responselist = PM.exec_onecmd(self.ip,self.user,self.password,current_cmd_real)
         for cmd in responselist:
