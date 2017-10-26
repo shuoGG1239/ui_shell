@@ -36,10 +36,10 @@ class SshWidget(QWidget):
                 return
             else:
                 current_cmd_real = current_cmd_real.format(*arglist)
-        self.sshwidgetui.textBrowserOutput.append('EXE: '+current_cmd_real)
+        self.sshwidgetui.plainTextEditOutput.appendPlainText('EXE: '+current_cmd_real)
         responselist = PM.exec_onecmd(self.ip,self.user,self.password,current_cmd_real)
         for cmd in responselist:
-            self.sshwidgetui.textBrowserOutput.append(cmd)
+            self.sshwidgetui.plainTextEditOutput.appendPlainText(cmd)
 
     @pyqtSlot()
     def __slot_edit(self):
@@ -50,7 +50,7 @@ class SshWidget(QWidget):
 
     @pyqtSlot()
     def __slot_clear(self):
-        self.sshwidgetui.textBrowserOutput.clear()
+        self.sshwidgetui.plainTextEditOutput.clear()
 
     @pyqtSlot()
     def __slot_refresh_database(self):
