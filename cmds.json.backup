@@ -1,9 +1,0 @@
-{
-    "TOMCAT_START":"export JAVA_HOME=/usr/java/jdk/jdk1.8.0_144;export JRE_HOME=/usr/java/jdk/jdk1.8.0_144/jre;/usr/java/tomcat/apache-tomcat-8.5.20/bin/startup.sh",
-    "TOMCAT_STOP":"export JAVA_HOME=/usr/java/jdk/jdk1.8.0_144;export JRE_HOME=/usr/java/jdk/jdk1.8.0_144/jre;/usr/java/tomcat/apache-tomcat-8.5.20/bin/shutdown.sh",
-    "REDIS_START":"cd /home/redis-3.2.1;./src/redis-server redis.conf",
-    "REDIS_STOP":"cd /home/redis-3.2.1;./src/redis-server stop",
-    "P5BLOG_START":"cd /home/myproject/p5_blog_project/p5Blog;python3 manage.py runserver 0.0.0.0:8000",
-    "netstat all":"netstat -ano",
-    "netstat 8000 port":"netstat -tulpn|grep 8000"
-}
