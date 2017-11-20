@@ -11,7 +11,7 @@ def run_with_titlebar():
     app = QApplication(sys.argv)
     sshwidget = SshWidget.SshWidget()
     mainWindow = window_titlebar.WindowWithTitleBar(sshwidget, qss_setting.DARKBLUEGREEN, 0)
-    mainWindow.setWindowTitle('Key action')
+    mainWindow.setWindowTitle('Ui Shell')
     mainWindow.setWindowIcon(QIcon(window_titlebar.imageroot + 'myicon.ico'))
     green_theme.setAppGreenStyle()
     mainWindow.show()

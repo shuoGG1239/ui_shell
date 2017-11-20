@@ -8,8 +8,8 @@
 
 # 使用例子
 * 查看8000端口占用的情况
-<img src="https://github.com/shuoGG1239/keyaction/blob/master/readme_img/example1.jpg" alt="example"><br>
+<br><img src="https://github.com/shuoGG1239/ui_shell/blob/master/readme_img/example1.jpg" alt="example"><br>
 
 * kill掉8000端口占用的进程
-<img src="https://github.com/shuoGG1239/keyaction/blob/master/readme_img/example1.jpg" alt="example"><br>
+<br><img src="https://github.com/shuoGG1239/ui_shell/blob/master/readme_img/example2.jpg" alt="example"><br>
 

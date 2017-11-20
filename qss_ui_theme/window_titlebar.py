@@ -143,7 +143,7 @@ class TitleBar(QWidget):
                     # self.setStyleSheet(...)   # cpp有这段代码,虽然暂时未察觉有什么影响
             elif pButton.objectName() == 'closeButton':
                 pWindow.close()
-                os._exit(0)
+                # os._exit(0) # 加这一句的话子窗口的__del__不会执行
 
 
     def __updateMaxmize(self):
