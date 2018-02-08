@@ -4,7 +4,7 @@ block_cipher = None
 
 
 a = Analysis(['main.py'],
-             pathex=['D:\\workspace_py\\ui_shell\\ui_shell'],
+             pathex=['D:\\workspace_py\\ui_shell-master'],
              binaries=[],
              datas=[],
              hiddenimports=[],

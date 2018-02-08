@@ -13,6 +13,3 @@
 * kill掉8000端口占用的进程
 <br><img src="https://github.com/shuoGG1239/ui_shell/blob/master/readme_img/example2.jpg" alt="example"><br>
 
-* 直接使用命令
-<br><img src="https://github.com/shuoGG1239/ui_shell/blob/master/readme_img/example3.jpg" alt="example"><br>
-
