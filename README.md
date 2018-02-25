@@ -8,7 +8,7 @@
 
 # 使用例子
 * FTP传文件
-<br><img src="https://github.com/shuoGG1239/ui_shell/blob/master/readme_img/example3.jpg" alt="example"><br>
+<br><img src="https://github.com/shuoGG1239/ui_shell/blob/master/readme_img/example3.png" alt="example"><br>
 
 * 查看8000端口占用的情况
 <br><img src="https://github.com/shuoGG1239/ui_shell/blob/master/readme_img/example1.jpg" alt="example"><br>
